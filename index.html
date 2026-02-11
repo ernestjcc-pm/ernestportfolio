@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ernest John Clyde Canlas | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Ernest John Clyde Canlas - Software Developer & Technical Specialist">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="logo">ERNEST@DEV:~$</span>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" style="color: var(--accent-color);">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <section id="profile" class="section profile-container">
+            <div class="profile-image">
+                <img src="profile.jpg" alt="Ernest John Clyde Canlas" class="image-placeholder">
+            </div>
+            <div class="profile-text">
+                <h1>Hello, I'm Ernest John Clyde Canlas</h1>
+                <p class="glitch-text">Software Developer & Technical Specialist</p>
+                <div class="bio">
+                    <p>I build innovative software solutions and technical systems. From <strong>Full-Stack
+                            Development</strong> to <strong>Hardware Integration</strong>, I transform ideas into
+                        functional, scalable applications.</p>
+                </div>
+                <a href="#contact" class="cta-btn">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="section-title">TECHNOLOGY SKILLS</h2>
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <h3><i class="fas fa-code"></i> Web & Programming</h3>
+                    <ul>
+                        <li><i class="fab fa-java"></i> Java</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-html5"></i> HTML / CSS / JavaScript</li>
+                        <li><i class="fas fa-gamepad"></i> C# (Unity)</li>
+                        <li><i class="fas fa-microchip"></i> C++ (Arduino)</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h3><i class="fas fa-paint-brush"></i> UI / Design & Media</h3>
+                    <ul>
+                        <li><i class="fas fa-image"></i> Adobe Photoshop</li>
+                        <li><i class="fas fa-palette"></i> Pixel Art</li>
+                        <li><i class="fas fa-video"></i> Video Editing</li>
+                        <li><i class="fas fa-chart-bar"></i> Infographics</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h3><i class="fas fa-tools"></i> Productivity & Tools</h3>
+                    <ul>
+                        <li><i class="fab fa-google"></i> Google Workspace</li>
+                        <li><i class="fas fa-file-word"></i> MS Office / WPS Office</li>
+                        <li><i class="fab fa-git-alt"></i> Git / GitHub</li>
+                        <li><i class="fas fa-book"></i> Technical Documentation</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h3><i class="fas fa-network-wired"></i> Network & Hardware</h3>
+                    <ul>
+                        <li><i class="fas fa-desktop"></i> PC Assembly & Maintenance</li>
+                        <li><i class="fas fa-ethernet"></i> Ethernet Cable Crimping</li>
+                        <li><i class="fas fa-wifi"></i> Router Setup & Configuration</li>
+                        <li><i class="fas fa-server"></i> Basic Server-Client Networking</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">FEATURED PROJECTS</h2>
+            <div class="project-grid">
+
+                <div class="project-card" onclick="openModal(this)" data-title="Moodle Code Activity Plugin"
+                    data-desc="A comprehensive Moodle plugin that enables automated code submission, compilation, and testing within the LMS. Features include real-time code execution, automated grading with test cases, and secure sandboxed environment using Docker containers. Built with PHP, JavaScript, and Python with a focus on educational technology and security."
+                    data-link="https://github.com/ernestjcc" data-tags="PHP, JavaScript, Python, Docker, Moodle"
+                    data-image="project-moodle.jpg">
+                    <div class="thumb-wrapper">
+                        <img src="project-moodle.jpg" alt="Moodle Code Activity" class="card-thumbnail"
+                            onerror="fallback(this, 1)">
+                        <span class="fallback-text">PROJECT_01</span>
+                    </div>
+                    <h3>Moodle Code Activity Plugin</h3>
+                    <p>Automated code testing & grading for Moodle LMS.</p>
+                    <div class="tags"><span>PHP</span><span>Docker</span><span>EdTech</span></div>
+                </div>
+
+            </div>
+
+            <div id="extra-projects" class="hidden-content">
+                <div class="project-grid mt-20">
+                    <div class="project-card" onclick="openModal(this)" data-title="Unity Game Development"
+                        data-desc="Game development projects using Unity and C#. Includes 2D and 3D game mechanics, physics simulation, and interactive gameplay elements. Demonstrates understanding of game design principles, object-oriented programming, and user experience design."
+                        data-link="#" data-tags="Unity, C#, Game Development" data-image="project-unity.jpg">
+                        <div class="thumb-wrapper">
+                            <img src="project-unity.jpg" alt="Unity Projects" class="card-thumbnail"
+                                onerror="fallback(this, 2)">
+                            <span class="fallback-text">PROJECT_02</span>
+                        </div>
+                        <h3>Unity Game Development</h3>
+                        <p>Interactive games and simulations with Unity.</p>
+                        <div class="tags"><span>Unity</span><span>C#</span><span>Game Dev</span></div>
+                    </div>
+
+                    <div class="project-card" onclick="openModal(this)" data-title="Network & Server Configuration"
+                        data-desc="Hands-on experience with network infrastructure setup and server configuration. Includes router configuration, network troubleshooting, server-client architecture implementation, and basic system administration tasks."
+                        data-link="#" data-tags="Networking, Server Admin, Infrastructure"
+                        data-image="project-network.jpg">
+                        <div class="thumb-wrapper">
+                            <img src="project-network.jpg" alt="Network Projects" class="card-thumbnail"
+                                onerror="fallback(this, 3)">
+                            <span class="fallback-text">PROJECT_03</span>
+                        </div>
+                        <h3>Network & Server Configuration</h3>
+                        <p>Infrastructure setup and network management.</p>
+                        <div class="tags"><span>Networking</span><span>Server</span><span>Admin</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="expand-btn" onclick="toggleSection('extra-projects', this)">
+                <span>View More Projects</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">CONNECT WITH ME</h2>
+            <p style="margin-top: 20px;">Open for OJT opportunities and collaborations.</p>
+
+            <div class="contact-links">
+                <a href="mailto:ernestcanlas@g.cjc.edu.ph" title="Email Me"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/ernestjcc" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="tel:+639498317032" title="Phone"><i class="fas fa-phone"></i></a>
+                <a href="https://linkedin.com/in/ernestcanlas" target="_blank" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+            </div>
+
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> ernestcanlas@g.cjc.edu.ph</p>
+                <p><i class="fas fa-phone"></i> +63 949 831 7032</p>
+            </div>
+
+            <div class="footer-text">
+                <p>SYSTEM_STATUS: ONLINE | © 2026 ERNEST JOHN CLYDE CANLAS</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">×</span>
+            <img id="modalImg" src="" alt="Project Detail">
+            <h2 id="modalTitle"></h2>
+            <p id="modalTags" style="color: var(--accent-color); font-size: 0.9rem; margin-bottom: 15px;"></p>
+            <p id="modalDesc"></p>
+            <a id="modalLink" href="#" target="_blank" class="modal-btn">View Project <i
+                    class="fas fa-external-link-alt"></i></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
